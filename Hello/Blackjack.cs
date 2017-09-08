@@ -15,18 +15,9 @@ namespace Hello
             //reading and converting 
             theirNumber = System.Convert.ToInt32(System.Console.ReadLine());
             //comparing that given umber is valid
-            while (theirNumber != myNumber)
+            if (theirNumber < 1 || theirNumber > 21)
             {
-                if (theirNumber < 1 || theirNumber > 21)
-                {
-                    Console.WriteLine("The given number is out of limits, try again.");
-                    theirNumber = System.Convert.ToInt32(System.Console.ReadLine());
-                }
-                else
-                {
-                    System.Console.Write("Enter any number between 1-21: ");
-                    theirNumber = System.Convert.ToInt32(System.Console.ReadLine());
-                }
+                Console.WriteLine("The given number is out of limits, try again.");
             }
             else
             {
