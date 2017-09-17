@@ -52,5 +52,89 @@ namespace Labrat
                 } while (true);
             }
         }
+        public class Pesukone
+        {
+            public int Virta { get; set; }
+            public int Lampotila { get; set; }
+            public int Aika { get; set; }
+            public int Pesuaine { get; set; }
+            public int Ohjelma { get; set; }
+            public Pesukone(int Virta, int Lampotila, int Aika, int Pesuaine) : base()
+            {
+                this.Virta = 0;
+                this.Lampotila = Lampotila;
+                this.Aika = Aika;
+                this.Pesuaine = Pesuaine;
+                this.Ohjelma = Ohjelma;
+            }
+            public Pesukone()
+            {
+            }
+        }
+        public class PesukoneKaytto
+        {
+            public static void TestaaPesukone()
+            {
+                do
+                {
+                    Pesukone OssinPesukone = new Pesukone();
+                    Console.WriteLine("Pestäänko pyykkia ?? 1 = Pestään, 0 = ei pestä");
+                    OssinPesukone.Virta = int.Parse(Console.ReadLine());
+                    Console.Clear();
+                    if (OssinPesukone.Virta == 1)
+                    {
+                        Console.WriteLine("Syötä lämpötila >>");
+                        OssinPesukone.Lampotila = int.Parse(Console.ReadLine());
+                        Console.Clear();
+                        Console.WriteLine("Pesukoneen lämpötila on asetettu " + OssinPesukone.Lampotila + " asteeseen");
+                        Console.WriteLine("Syötä pesuohjelman kesto >>");
+                        OssinPesukone.Aika = int.Parse(Console.ReadLine());
+                        int Tunnit = OssinPesukone.Aika / 60;
+                        int Minuutit = OssinPesukone.Aika % 60;
+                        Console.WriteLine("Syötä pesuaineen määrä (ml) >>");
+                        OssinPesukone.Pesuaine = int.Parse(Console.ReadLine());
+                        Console.Clear();
+                        Console.WriteLine("Pesukoneen lämpötila on asetettu " + OssinPesukone.Lampotila + " asteeseen");
+                        Console.WriteLine("Pesuohjelman Kesto on " + Tunnit + " tuntia ja " + Minuutit + " minuuttia ");
+                        Console.WriteLine("Pesuainetta syötetty " + OssinPesukone.Pesuaine + " ml");
+                        Console.WriteLine("Käynnistetäänkö pesuohjelma?(1/0) >> ");
+                        OssinPesukone.Ohjelma = int.Parse(Console.ReadLine());
+                        if (OssinPesukone.Ohjelma == 1)
+                        {
+                            Console.WriteLine("Pyykki pesty");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Pesuohjelma sammutettiin");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Pesukone pois päältä");
+                        break;
+                    }
+                } while (true);
+            }
+        }
+        public class TV
+        {
+            public int Virta { get; set; }
+            public int Kanava { get; set; }
+            public int Aanenvoimakkuus { get; set; }
+            public TV(int virta, int kanava, int aanenvoimakkuus) : base()
+            {
+                this.Virta = virta;
+                this.Kanava = kanava;
+                this.Aanenvoimakkuus = aanenvoimakkuus;
+            }
+            public TV()
+            {
+            }
+        }
+        public class TVkaytto
+        {
+            
+        }
     }
 }
