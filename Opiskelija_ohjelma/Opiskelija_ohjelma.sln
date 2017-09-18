@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opiskelija_ohjelma", "Opiskelija_ohjelma\Opiskelija_ohjelma.csproj", "{DAC7903C-23D7-41C6-AC51-87B03ADB0C11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC7903C-23D7-41C6-AC51-87B03ADB0C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC7903C-23D7-41C6-AC51-87B03ADB0C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC7903C-23D7-41C6-AC51-87B03ADB0C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC7903C-23D7-41C6-AC51-87B03ADB0C11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1B57213-64F8-4AB8-BAC0-D8242EB876EB}
+	EndGlobalSection
+EndGlobal
