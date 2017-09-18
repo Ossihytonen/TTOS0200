@@ -133,9 +133,27 @@ namespace Labrat
             public string Name { get; set; }
             public int Speed { get; set; }
             public int Tyres { get; set; }
-            public void name()
+            public string name()
             {
                 return Name;
+            }
+            public int speed()
+            {
+                return Speed;
+            }
+            public int tyres()
+            {
+                return Tyres;
+            }
+            public void PrintData()
+            {
+                Console.WriteLine("Nimi = {0}", Name);
+                Console.WriteLine("Nopeus = {0}", Speed);
+                Console.WriteLine("renkaat = {0}", Tyres);
+            }
+            public Tuple<string, int , int> ToString()
+            {
+                return Tuple.Create(Name, Speed, Tyres);
             }
         }
     }
