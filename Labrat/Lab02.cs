@@ -14,7 +14,7 @@ namespace Labrat
             public int Lampotila { get; set; }
             public int Kosteus { get; set; }
 
-            public void virta()
+            public void VirranAsennus()
             {
                 if (Virta == 1)
                 {
@@ -25,11 +25,11 @@ namespace Labrat
                     Console.WriteLine("kiuas ei ole Päällä");
                 }
             }
-            public void lampotila()
+            public void LampotilanAsennus()
             {
                 Console.WriteLine("Lämpötila on {0} astetta", Lampotila);
             }
-            public void kosteus()
+            public void KosteudenAsennus()
             {
                 if (Kosteus > 0)
                 {
@@ -50,7 +50,7 @@ namespace Labrat
             public int Pesuaine { get; set; }
             public int Ohjelma { get; set; }
 
-            public void virta()
+            public void VirranAsennus()
             {
                 if (Virta == 1)
                 {
@@ -61,11 +61,11 @@ namespace Labrat
                     Console.WriteLine("Pesukone ei ole Päällä");
                 }
             }
-            public void lampotila()
+            public void LampotilanAsennus()
             {
                 Console.WriteLine("Lämpötila on {0} astetta", Lampotila);
             }
-            public void aika()
+            public void AjanAsennus()
             {
                 if (Aika > 0)
                 {
@@ -79,11 +79,11 @@ namespace Labrat
                     Console.Clear();
                 }
             }
-            public void pesuaine()
+            public void PesuaineenAsennus()
             {
                 Console.WriteLine("Annoit pesuainetta {0} millilitraa",Pesuaine);
             }
-            public void ohjelma()
+            public void OhjelmanAsennus()
             {
                 if (Ohjelma == 1)
                 {
@@ -101,7 +101,7 @@ namespace Labrat
             public int Kanava { get; set; }
             public int Aanenvoimakkuus { get; set; }
 
-            public void virta()
+            public void VirranAsennus()
             {
                 if (Virta == 1)
                 {
@@ -112,11 +112,11 @@ namespace Labrat
                     Console.WriteLine("...........Epämääräistä siritystä");
                 }
             }
-            public void kanava()
+            public void KanavanAsennus()
             {
                 Console.WriteLine("Kanava vaihtui ohjelmapaikalle {0}", Kanava);
             }
-            public void aanenvoimakkuus()
+            public void AanenvoimakkuudenAsennus()
             {
                 if (Aanenvoimakkuus < 0)
                 {
@@ -137,11 +137,11 @@ namespace Labrat
             {
                 return Name;
             }
-            public int speed()
+            public int SpeedConf()
             {
                 return Speed;
             }
-            public int tyres()
+            public int TyresConf()
             {
                 return Tyres;
             }
@@ -151,7 +151,7 @@ namespace Labrat
                 Console.WriteLine("Nopeus = {0}", Speed);
                 Console.WriteLine("renkaat = {0}", Tyres);
             }
-            public Tuple<string, int , int> ToString()
+            public Tuple<string, int , int> ToSString()
             {
                 return Tuple.Create(Name, Speed, Tyres);
             }

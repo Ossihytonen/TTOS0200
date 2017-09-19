@@ -44,13 +44,13 @@ namespace Labrat
 
             Console.WriteLine("Laitetaanko TV päälle (1/0)? >>");
             uus.Virta = int.Parse(Console.ReadLine());
-            uus.virta();
+            uus.VirtaAsennus();
             Console.WriteLine("Anna kanava >>");
             uus.Kanava = int.Parse(Console.ReadLine());
-            uus.kanava();
+            uus.KanavaAsennus();
             Console.WriteLine("Muutetaanko äänenvoimakkuutta (-1 niin pienenee +1 niin suurenee) ? >>");
             uus.Aanenvoimakkuus = int.Parse(Console.ReadLine());
-            uus.aanenvoimakkuus();*/
+            uus.AanenvoimakkuusAsennus();*/
 
             Lab02.Vehicle uus = new Lab02.Vehicle();
 
@@ -58,10 +58,10 @@ namespace Labrat
             uus.Speed = 300;
             uus.Tyres = 2144;
             Console.WriteLine(uus.name());
-            Console.WriteLine(uus.speed());
-            Console.WriteLine(uus.tyres());
+            Console.WriteLine(uus.SpeedConf());
+            Console.WriteLine(uus.TyresConf());
             uus.PrintData();
-            Console.WriteLine(uus.ToString());
+            Console.WriteLine(uus.ToSString());
 
         }
     }
