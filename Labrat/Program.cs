@@ -115,7 +115,7 @@ namespace Labrat
                     Console.WriteLine("Elevator is now in floor : {0}", uus.NykyinenKerros);
                 }
             } while (true);*/
-            Vahvistin uus = new Vahvistin();
+            /*Vahvistin uus = new Vahvistin();
             do
             {
                 Console.WriteLine("Give a new volume value (0-100) >");
@@ -135,23 +135,42 @@ namespace Labrat
                 {
                     Console.WriteLine("-> Amplifier volume is set to : {0}", uus.Aanenvoimakkuus);
                 }
-            } while (true);
-            /*Employee nro1 = new Employee();
+            } while (true);*/
+            /*Employee nro1 = new Employee("jaska");
             nro1.Name = "Kirsi Kurikka";
             nro1.Profession = "Teatcher";
             nro1.Salary = 1200;
-            Console.WriteLine(nro1.InfoE);
+            Console.WriteLine(nro1.ToString());
             Boss nro2 = new Boss();
             nro2.Name = "Pekka Varpunen";
             nro2.Profession = "Leader";
             nro2.Salary = 7000;
             nro2.Car = "Saab";
             nro2.Bonus = 4000;
-            Console.WriteLine(nro2.InfoB);
+            Console.WriteLine(nro2.ToString());
             nro1.Name = "Kirsi Kurikka";
             nro1.Profession = "Head Teatcher";
             nro1.Salary = 4200;
-            Console.WriteLine(nro1.InfoE);*/
+            Console.WriteLine(nro1.ToString());*/
+            Vehicle vekotin = new Vehicle();
+            vekotin.Name = "Audi";
+            vekotin.Model = "2017";
+            vekotin.ProductionYear = 2017;
+            vekotin.Color = "Punainen";
+            Bike vekotin2 = new Bike();
+            vekotin2.Name = "Audi";
+            vekotin2.Model = "2017";
+            vekotin2.ProductionYear = 2017;
+            vekotin2.Color = "Punainen";
+            vekotin2.Vaihteisto = "Norjalaienn";
+            vekotin2.VaihteistonMalli = "20123";
+            Boat vekotin3 = new Boat();
+            vekotin3.Name = "Audi";
+            vekotin3.Model = "2017";
+            vekotin3.ProductionYear = 2017;
+            vekotin3.Color = "Punainen";
+            vekotin3.VeneenTyyppi = "soutuvene";
+            vekotin3.IstuintenMäärä = 3;
         }
     }
 }
