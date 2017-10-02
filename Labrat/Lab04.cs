@@ -123,7 +123,7 @@ namespace Labrat
         public string Color { get; set; }
         public override string ToString()
         {
-            return Name + " " + Model + " " + ProductionYear + " " + Color;
+            return "Merkki: "+Name + "Malli: " + Model + "Valmistusvuosi; " + ProductionYear + "Väri; " + Color;
         }
     }
     public class Bike : Vehicle
@@ -132,7 +132,7 @@ namespace Labrat
         public string VaihteistonMalli { get; set; }
         public override string ToString()
         {
-            return base.ToString() + Vaihteisto + " " + VaihteistonMalli;
+            return base.ToString() + "Vaihteisto; " + Vaihteisto + " Vaihteistomalli: " + VaihteistonMalli;
         }
 
     }
@@ -142,7 +142,7 @@ namespace Labrat
         public int IstuintenMäärä { get; set; }
         public override string ToString()
         {
-            return base.ToString() + VeneenTyyppi + " " + IstuintenMäärä;
+            return base.ToString() + "Veneen tyyppi :" +VeneenTyyppi + " Veneen istuinten lukumäärä: " + IstuintenMäärä;
         }
     }
 }
