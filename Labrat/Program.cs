@@ -25,7 +25,7 @@ namespace Labrat
 
                 }
                 Console.WriteLine("Anna volumi> (0-9)");
-                if (uusiradio.SäädäÄänenvoimakkuutta(int.Parse(Console.ReadLine())))
+                if (uusiradio.Äänenvoimakkuus(int.Parse(Console.ReadLine())))
                 {
                     Console.WriteLine("Volumit " + uusiradio.Volume);
                 }
@@ -35,7 +35,7 @@ namespace Labrat
                     Console.WriteLine("Volumit " + uusiradio.Volume);
                 }
                 Console.WriteLine("Anna taajuus> (2000.0 - 26000.0)");
-                if (uusiradio.SäädäTaajuutta(Convert.ToDouble(Console.ReadLine())))
+                if (uusiradio.Taajuus(Convert.ToDouble(Console.ReadLine())))
                 {
                     Console.WriteLine("Taajuus: " + uusiradio.Frequency);
                 }

@@ -19,13 +19,13 @@ namespace Labrat
 
             private double frequency;
             private int volume;
-            //private int virta;
+            private int virta;
 
-            public bool KäynnistäLaite(int binääri)
+            public bool KäynnistäLaite(int virtaa)
             {
-                if (binääri == Virta)
+                if (virtaa == Virta)
                 {
-                    //virta = binääri;
+                    virta = virtaa;
                     return true;
                 }
                 else
@@ -33,7 +33,7 @@ namespace Labrat
                     return false;
                 }
             }
-            public bool SäädäÄänenvoimakkuutta(int arvo)
+            public bool Äänenvoimakkuus(int arvo)
             {
                 if (arvo <= Maxvolume && arvo >= Minvolume)
                 {
@@ -42,10 +42,11 @@ namespace Labrat
                 }
                 else
                 {
+
                     return false;
                 }
             }
-            public bool SäädäTaajuutta(double hertsit)
+            public bool Taajuus(double hertsit)
             {
                 if (hertsit <= MaxFrequency && hertsit >= MinFrequency)
                 {

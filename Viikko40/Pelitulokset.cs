@@ -8,7 +8,7 @@ namespace Viikko40
 {
     class Pelitulokset
     {
-        public class Jalkapallo
+        public class Peli
         {
             public string OtteluPaiva { get; set; }
             public string Koti { get; set; }
@@ -17,14 +17,18 @@ namespace Viikko40
             public string Pisteet { get; set; }
             public override string ToString()
             {
-                return "|Nimi: " + OtteluPaiva + " |Valmistaja: " + Koti + " |Valmistus aika: " + Vieras + " |Hinta: " + Voittaja + Pisteet;
+                return "|Nimi: " + OtteluPaiva + " |Kotijoukkue: " + Koti + " |Vierasjoukkue: " + Vieras + " |Voittaja: " + Voittaja +" |Pelin lopputulos; "+ Pisteet;
             }
         }
-        public class Jaakiekko : Jalkapallo
+        public class Jaakiekko : Peli
         {
 
         }
-        public class Pesapallo : Jaakiekko
+        public class Pesapallo : Peli
+        {
+
+        }
+        public class Jalkapallo : Peli
         {
 
         }
