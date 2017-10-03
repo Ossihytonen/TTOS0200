@@ -136,7 +136,7 @@ namespace Labrat
                     Console.WriteLine("-> Amplifier volume is set to : {0}", uus.Aanenvoimakkuus);
                 }
             } while (true);*/
-            /*Employee nro1 = new Employee("jaska");
+            Employee nro1 = new Employee();
             nro1.Name = "Kirsi Kurikka";
             nro1.Profession = "Teatcher";
             nro1.Salary = 1200;
@@ -151,8 +151,8 @@ namespace Labrat
             nro1.Name = "Kirsi Kurikka";
             nro1.Profession = "Head Teatcher";
             nro1.Salary = 4200;
-            Console.WriteLine(nro1.ToString());*/
-            Vehicle vekotin = new Vehicle();
+            Console.WriteLine(nro1.ToString());
+            /*Vehicle vekotin = new Vehicle();
             vekotin.Name = "Audi";
             vekotin.Model = "2017";
             vekotin.ProductionYear = 2017;
@@ -170,7 +170,7 @@ namespace Labrat
             vekotin3.ProductionYear = 2017;
             vekotin3.Color = "Punainen";
             vekotin3.VeneenTyyppi = "soutuvene";
-            vekotin3.IstuintenMäärä = 3;
+            vekotin3.IstuintenMäärä = 3;*/
         }
     }
 }
