@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B5A2F3C-8E0F-47CC-8FD2-F70C1EB8EAE2}</ProjectGuid>
+    <ProjectGuid>{116D2666-33D4-44F5-8337-EDA82AEDB9EE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Labrat</RootNamespace>
-    <AssemblyName>Labrat</AssemblyName>
+    <RootNamespace>Viikko40</RootNamespace>
+    <AssemblyName>Viikko40</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -21,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,14 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Kirjahyllysta.cs" />
-    <Compile Include="Lab01.cs" />
-    <Compile Include="Lab02.cs" />
-    <Compile Include="Lab04.cs" />
-    <Compile Include="Lab05.cs" />
+    <Compile Include="Kirjahyllyssa.cs" />
+    <Compile Include="Pelitulokset.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="testia.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
