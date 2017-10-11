@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikko41", "Viikko41\Viikko41.csproj", "{9D3AA09A-32D8-4047-B1DC-76C156A7D7D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikko42", "Viikko42\Viikko42.csproj", "{FA415EFA-FCF3-484C-B296-A1A42F558F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiDemo", "TuntiDemo\TuntiDemo.csproj", "{1E15DC31-7F16-4F51-BD4E-4C864AE9A761}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FA415EFA-FCF3-484C-B296-A1A42F558F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA415EFA-FCF3-484C-B296-A1A42F558F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA415EFA-FCF3-484C-B296-A1A42F558F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E15DC31-7F16-4F51-BD4E-4C864AE9A761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E15DC31-7F16-4F51-BD4E-4C864AE9A761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E15DC31-7F16-4F51-BD4E-4C864AE9A761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E15DC31-7F16-4F51-BD4E-4C864AE9A761}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
