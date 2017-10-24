@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JAMK.IT.MiniASIO
+namespace JAMK.IT
 {
     public class Opiskelija
     {

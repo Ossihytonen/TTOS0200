@@ -4,13 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JAMK.IT.MiniASIO
+namespace JAMK.IT
 {
-    class TestaaMiniASIO
+    class TestaaCD
     {
-        static void TEstaa()
+        static void Testaa()
         {
-            //luodaan List-tyyppinen lista opiskelijoista
+            CD pop = new CD();
+            pop.LevynNimi = "Klassikkohitit";
+            pop.Artisti = "Piirainen";
+            //luodaan List-tyyppinen lista
+            List<CD> kappaleet = new List<CD>();
+            kappaleet.Add(new CD { Biisit = "Räpätessä roiskuu", Kesto = "4.32" });
+            kappaleet.Add(new CD { Biisit = "Runopoika", Kesto = "1.32" });
+            kappaleet.Add(new CD { Biisit = "Piippolanvaari", Kesto = "43.12" });
+            kappaleet.Add(new CD { Biisit = "Maijjalla oli karitsa", Kesto = "22.12" });
+            kappaleet.Add(new CD { Biisit = "Hippulat vinkuu", Kesto = "5.12" });
+            kappaleet.Add(new CD { Biisit = "Vielä keksii", Kesto = "6.12" });
+            kappaleet.Add(new CD { Biisit = "Ei enää", Kesto = "2.12" });
+            //KAikkien tiedot
+            Console.WriteLine("CD data:\n" + "- name: " + pop.LevynNimi + "\n- artist: " + pop.Artisti + "\n- songs: ");
+            foreach (CD cd in kappaleet)
+            {
+                Console.WriteLine(" -" + cd.ToString());
+            }
+            /*//luodaan List-tyyppinen lista opiskelijoista
             List<Opiskelija> opiskelijat = new List<Opiskelija>();
             //TEstin vuoksi erilaisia tapoja lisätä olioita listaan
             Opiskelija masa = new Opiskelija("Masa", "Niemi//");
@@ -49,7 +67,7 @@ namespace JAMK.IT.MiniASIO
                 Console.WriteLine(o.ToString());
             }
             //uuden opiskelija lisäys + takistus ettei asio id ole olemasas
-            Console.WriteLine("alkfdkso");
+            Console.WriteLine("Anna AsioID >>");
             string asioid = Console.ReadLine();
             bool lippu = false;
             foreach (Opiskelija o in opiskelijat)
@@ -68,9 +86,9 @@ namespace JAMK.IT.MiniASIO
             {
                 Console.WriteLine("Anna uuden opiskelijan Etunimi");
                 string etunimi = Console.ReadLine();
-                Console.WriteLine("Anna uuden opiskelijan Etunimi");
+                Console.WriteLine("Anna uuden opiskelijan Sukunimi");
                 string sukunimi = Console.ReadLine();
-                Console.WriteLine("Anna uuden opiskelijan Etunimi");
+                Console.WriteLine("Anna uuden opiskelijan Ryhmä");
                 string ryhma = Console.ReadLine();
                 //uusi olio
                 Opiskelija uusi = new Opiskelija(etunimi, sukunimi, asioid, ryhma);
@@ -80,11 +98,11 @@ namespace JAMK.IT.MiniASIO
                 {
                     Console.WriteLine(o.ToString());
                 }
-            }
+            }*/
         }
         static void Main(string[] args)
         {
-            TEstaa();
+            Testaa();
         }
     }
 }
