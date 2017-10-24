@@ -43,9 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CDlevy.cs" />
+    <Compile Include="Korttipakka.cs" />
     <Compile Include="Opiskelija.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMliiga.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

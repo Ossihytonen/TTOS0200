@@ -10,7 +10,60 @@ namespace JAMK.IT
     {
         static void Testaa()
         {
-            CD pop = new CD();
+            /*Joukkue JYP = new Joukkue("Jyp", "Jyväskylä");
+            Console.WriteLine(JYP.ToString());
+            List<Pelaaja> pelaajat = new List<Pelaaja>();
+            pelaajat.Add(new Pelaaja() { ID =0, Etunimi = "Frans", Sukunimi = "Tuohimaa", Kätisyys = "Vasen", PeliNumero = 35 });
+            pelaajat.Add(new Pelaaja() { ID =1, Etunimi = "Brett", Sukunimi = "Carson", Kätisyys = "Oikea", PeliNumero = 22 });
+            pelaajat.Add(new Pelaaja() { ID =2, Etunimi = "Urho", Sukunimi = "Vaakanainen", Kätisyys = "Vasen", PeliNumero = 7 });
+            pelaajat.Add(new Pelaaja() { ID =3, Etunimi = "Ville", Sukunimi = "Koho", Kätisyys = "Vasen", PeliNumero = 8 });
+            pelaajat.Add(new Pelaaja() { ID =4, Etunimi = "Cody", Sukunimi = "Kunyk", Kätisyys = "Vasen", PeliNumero = 19 });
+            pelaajat.Add(new Pelaaja() { ID =5, Etunimi = "Topi", Sukunimi = "Nättinen", Kätisyys = "Vasen", PeliNumero = 59 });
+            foreach (Pelaaja p in pelaajat)
+            {
+                Console.WriteLine(p);
+            }
+            pelaajat.Add(new Pelaaja() { ID=6, Etunimi = "Jussi", Sukunimi = "Markkanen", Kätisyys = "Vasen", PeliNumero = 27 });
+            Console.WriteLine("\nLisätty pelaaja:\n");
+            foreach (Pelaaja p in pelaajat)
+            {
+                Console.WriteLine(p);
+            }
+            pelaajat.RemoveAt(6);
+            Console.WriteLine("\nPoistettu pelaaja:\n");
+            foreach (Pelaaja p in pelaajat)
+            {
+                Console.WriteLine(p);
+            }*/
+            Korttipakka pakka = new Korttipakka();
+            //luodaan List-tyyppinen lista
+            List<Korttipakka> kortit = new List<Korttipakka>();
+
+            for (int i = 1; i < 15; i++)
+            {
+                kortit.Add(new Korttipakka{ Maa = "Pata", Luku = i});
+            }
+            for (int i = 1; i < 15; i++)
+            {
+                kortit.Add(new Korttipakka { Maa = "Ruutu", Luku = i});
+            }
+            for (int i = 1; i < 15; i++)
+            {
+                kortit.Add(new Korttipakka { Maa = "Risti", Luku = i });
+            }
+            for (int i = 1; i < 15; i++)
+            {
+                kortit.Add(new Korttipakka { Maa = "Hertta",Luku = i});
+            }
+
+            
+            //KAikkien tiedot
+            Console.WriteLine("Kaikki pelikortit:");
+            foreach (Korttipakka item in kortit)
+            {
+                Console.WriteLine(" -" + item.ToString());
+            }
+            /*CD pop = new CD();
             pop.LevynNimi = "Klassikkohitit";
             pop.Artisti = "Piirainen";
             //luodaan List-tyyppinen lista
@@ -28,7 +81,7 @@ namespace JAMK.IT
             {
                 Console.WriteLine(" -" + cd.ToString());
             }
-            /*//luodaan List-tyyppinen lista opiskelijoista
+            *//*//luodaan List-tyyppinen lista opiskelijoista
             List<Opiskelija> opiskelijat = new List<Opiskelija>();
             //TEstin vuoksi erilaisia tapoja lisätä olioita listaan
             Opiskelija masa = new Opiskelija("Masa", "Niemi//");
