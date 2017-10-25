@@ -13,12 +13,12 @@ namespace JAMK.IT
             /*Joukkue JYP = new Joukkue("Jyp", "Jyväskylä");
             Console.WriteLine(JYP.ToString());
             List<Pelaaja> pelaajat = new List<Pelaaja>();
-            pelaajat.Add(new Pelaaja() { ID =0, Etunimi = "Frans", Sukunimi = "Tuohimaa", Kätisyys = "Vasen", PeliNumero = 35 });
-            pelaajat.Add(new Pelaaja() { ID =1, Etunimi = "Brett", Sukunimi = "Carson", Kätisyys = "Oikea", PeliNumero = 22 });
-            pelaajat.Add(new Pelaaja() { ID =2, Etunimi = "Urho", Sukunimi = "Vaakanainen", Kätisyys = "Vasen", PeliNumero = 7 });
-            pelaajat.Add(new Pelaaja() { ID =3, Etunimi = "Ville", Sukunimi = "Koho", Kätisyys = "Vasen", PeliNumero = 8 });
-            pelaajat.Add(new Pelaaja() { ID =4, Etunimi = "Cody", Sukunimi = "Kunyk", Kätisyys = "Vasen", PeliNumero = 19 });
-            pelaajat.Add(new Pelaaja() { ID =5, Etunimi = "Topi", Sukunimi = "Nättinen", Kätisyys = "Vasen", PeliNumero = 59 });
+            pelaajat.Add(new Pelaaja() { ID =0, Etunimi = "Antti", Sukunimi = "AAtami", Kätisyys = "Vasen", PeliNumero = 35 });
+            pelaajat.Add(new Pelaaja() { ID =1, Etunimi = "Brett", Sukunimi = "BAsetti", Kätisyys = "Oikea", PeliNumero = 22 });
+            pelaajat.Add(new Pelaaja() { ID =2, Etunimi = "Celi", Sukunimi = "Cesetti", Kätisyys = "Vasen", PeliNumero = 7 });
+            pelaajat.Add(new Pelaaja() { ID =3, Etunimi = "Deli", Sukunimi = "Daavid", Kätisyys = "Vasen", PeliNumero = 8 });
+            pelaajat.Add(new Pelaaja() { ID =4, Etunimi = "Elin", Sukunimi = "EEmeli", Kätisyys = "Vasen", PeliNumero = 19 });
+            pelaajat.Add(new Pelaaja() { ID =5, Etunimi = "Felin", Sukunimi = "Faarao", Kätisyys = "Vasen", PeliNumero = 59 });
             foreach (Pelaaja p in pelaajat)
             {
                 Console.WriteLine(p);
