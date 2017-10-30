@@ -11,39 +11,54 @@ namespace Viikko43
     {
         static void Main(string[] args)
         {
-            try
             {
-                float numero;
-                string filupath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-                string filu = filupath + @"\temp.txt";
-                //kirjoitetaan käyttäjän antamat rivit tiedostoon
-                //Luodaan streamWriter tyyppinne olio johon kirjoitetaan
-                StreamWriter sw = new StreamWriter(filu);
-                do
+
+                try
                 {
-                    Console.Write("Anna nimi (Enter lopettaa): ");
-                    numero = int.Parse(Console.ReadLine());
-                    if (numero > 4)
+                    System.IO.StreamWriter KokoLuku = new System.IO.StreamWriter("Koko.txt");
+                    System.IO.StreamWriter RealLuku = new System.IO.StreamWriter("Real.txt");
+                    double i;
+                    int j;
+                    string luku;
+
+                    do
                     {
-                        sw.WriteLine(numero + "\n");
+                        Console.WriteLine("Give a number (enter or not a number ends) : ");
+                        luku = Console.ReadLine();
+                        if (int.TryParse(luku, out j))
+                        {
+                            KokoLuku.WriteLine(luku);
+                        }
+                        else if (Double.TryParse(luku, out i))
+                        {
+                            RealLuku.WriteLine(luku);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Lopetetaan");
+                            break;
+                        }
                     }
-                } while (numero>9000);
-                sw.Close();
-                //avataan tiedosto uudestaan ja luetaan sen sisältö ja näytetään konsolissa
-                if (File.Exists(filu))
-                {
-                    string teksti = File.ReadAllText(filu);
-                    Console.WriteLine(teksti);
+
+                    while (Double.TryParse(luku, out i) || int.TryParse(luku, out j));
+                    KokoLuku.Close();
+                    RealLuku.Close();
+
+                    Console.WriteLine("Contents of Koko.txt");
+                    string text1 = System.IO.File.ReadAllText(@"Koko.txt");
+                    System.Console.WriteLine(text1);
+
+                    Console.WriteLine("Contents of Real.txt");
+                    string text2 = System.IO.File.ReadAllText(@"Real.txt");
+                    System.Console.WriteLine(text2);
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Ilmeni seuraava virhe" + ex);
+                }
+
             }
-            catch (FileNotFoundException ex)
-            {
-                Console.WriteLine("Tiedostoa ei löydy!");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+
             /*string filu = @"nimet.txt";
             try
             {
@@ -99,6 +114,7 @@ namespace Viikko43
             {
                 Console.WriteLine(ex.Message);
             }*/
+
         }
     }
 }
