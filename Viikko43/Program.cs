@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +13,35 @@ namespace Viikko43
     {
         static void Main(string[] args)
         {
+            List<Ohjelmisto> uusiohjelmisto = new List<Ohjelmisto>();
+            uusiohjelmisto.Add(new Ohjelmisto { Kanava = "2", OhjelmanNimi = "Pikkukakkonen", AlkuAika = "17:00", Loppuaika = "18:00", Info = "Lastenohjelma tarkoitettu lapsille. Ransu viihdyttää." });
+            uusiohjelmisto.Add(new Ohjelmisto { Kanava = "3", OhjelmanNimi = "Vain Elämää", AlkuAika = "20:00", Loppuaika = "22:00", Info = "Aikuisten ohjelma, jossa itketään." });
+
+            // create a file for ohjelmat
+            Stream writeMultipleStream = new FileStream("MyPersons.bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            // write persons array to disk, note: uses formatter using System.Runtime.Serialization.OssiyHytönen;
+            //using System.Runtime.Serialization.Formatters.Binary;
+            IFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(writeMultipleStream, uusiohjelmisto);
+            // close file
+            writeMultipleStream.Close();
+
+            // create stream for reading ohjelmat
+            Stream openStream = new FileStream("MyPersons.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            // create a list and read ohjelmat into it from disk
+            List<Ohjelmisto> readUusiohjelmisto = (List<Ohjelmisto>)formatter.Deserialize(openStream);
+            // close stream
+            openStream.Close();
+
+            // Näyttäminen
+            foreach (Ohjelmisto o in readUusiohjelmisto)
             {
+                Console.WriteLine("......................................");
+                Console.WriteLine("Kanavalla: {0} \nOhjelma: {1} \nAlkuaika: {2} \nLoppuaika: {3} \nInfo: {4} ", o.Kanava, o.OhjelmanNimi, o.AlkuAika, o.Loppuaika, o.Info);
+            }
+
+
+            /*{
 
                 try
                 {
@@ -57,7 +87,7 @@ namespace Viikko43
                     Console.WriteLine("Ilmeni seuraava virhe" + ex);
                 }
 
-            }
+            }*/
 
             /*string filu = @"nimet.txt";
             try
