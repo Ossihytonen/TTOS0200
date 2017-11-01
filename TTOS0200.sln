@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiDemo", "TuntiDemo\Tunt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikko43", "Viikko43\Viikko43.csproj", "{7EC4D6EB-9CB7-4772-AABC-CD2D792A306F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikko44", "Viikko44\Viikko44.csproj", "{15B7733F-1F45-4EA2-BE30-EF3A82186547}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{7EC4D6EB-9CB7-4772-AABC-CD2D792A306F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EC4D6EB-9CB7-4772-AABC-CD2D792A306F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EC4D6EB-9CB7-4772-AABC-CD2D792A306F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B7733F-1F45-4EA2-BE30-EF3A82186547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B7733F-1F45-4EA2-BE30-EF3A82186547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B7733F-1F45-4EA2-BE30-EF3A82186547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B7733F-1F45-4EA2-BE30-EF3A82186547}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
