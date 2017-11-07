@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Viikko44
 {
-    public struct Ohjastaja
+    /*public struct Ohjastaja
     {
         public string Nimi;
         public int Startit;
         public int Voitot;
         public float VoittoPros;
-    }
+    }*/
     class Program
     {
-        static void LueOhjastajatVer2()
+        /*static void LueOhjastajatVer2()
         {
             try
             {
@@ -71,17 +71,68 @@ namespace Viikko44
             {
                 Console.WriteLine(ex.Message);
             }
-        }
+        }*/
         static void Main(string[] args)
         {
-            try
+            /*try
             {
-                LueOhjastajatVer2();
+                Noppa noppa = new Noppa();
+                Console.WriteLine("How many times you want to throw a dice?: ");
+                int throwamount = int.Parse(Console.ReadLine());
+                noppa.Throw(throwamount);
+                noppa.Print();
+                Console.WriteLine("Average: " + noppa.Throws.Average());
+                for (int x = 1; x < 7; x++)
+                {
+                    int count = 0;
+                    foreach (int i in noppa.Throws)
+                    {
+                        if (i == x)
+                        {
+                            count++;
+                        }
+                    }
+                    Console.WriteLine("{0} count is: {1}", x, count);
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }*/
+
+            //-----------------------------------------------------------------------------------------------s
+            /*List<Product> Ostoskarryt = new List<Product>();
+            Ostoskarryt.Add(new Product("Milk", "1.4"));
+            Ostoskarryt.Add(new Product("Yoghurt", "0.8"));
+            Ostoskarryt.Add(new Product("Juice", "2.5"));
+            Console.WriteLine("All products in collection: ");
+            foreach (Product asia in Ostoskarryt)
+            {
+                Console.WriteLine("-product: {0} {1}e", asia.Tuote, asia.Hinta);
+            }*/
+            //------------------------------------------------------------------------------------------------¤
+            /*try
+            {
+                List<Shape> list = new List<Shape>();
+                list.Add(new Circle("Ympyrä ", 5));
+                list.Add(new Rectangle("Suorakulmio ", 4, 6));
+                list.Add(new Circle("Ympyrä ", 8));
+                list.Add(new Rectangle("Suorakulmio ", 3, 70));
+
+                foreach (Shape kappale in list)
+                {
+                    Console.WriteLine(kappale.ToString());
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }*/
+            double[] array = { 1.0, 2.0, 3.3, 5.5, 6.3, -4.5, 12.0 };
+            ArrayCalcs.Sum1(array);
+            ArrayCalcs.Ave(array);
+            ArrayCalcs.Maximi(array);
+            ArrayCalcs.Minimi(array);
         }
     }
 }
