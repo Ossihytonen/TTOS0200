@@ -74,13 +74,12 @@ namespace Viikko44
         }*/
         static void Main(string[] args)
         {
-            /*try
+            try
             {
                 Noppa noppa = new Noppa();
                 Console.WriteLine("How many times you want to throw a dice?: ");
                 int throwamount = int.Parse(Console.ReadLine());
                 noppa.Throw(throwamount);
-                noppa.Print();
                 Console.WriteLine("Average: " + noppa.Throws.Average());
                 for (int x = 1; x < 7; x++)
                 {
@@ -98,7 +97,7 @@ namespace Viikko44
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }*/
+            }
 
             //-----------------------------------------------------------------------------------------------s
             /*List<Product> Ostoskarryt = new List<Product>();
@@ -128,11 +127,11 @@ namespace Viikko44
             {
                 Console.WriteLine(e.Message);
             }*/
-            double[] array = { 1.0, 2.0, 3.3, 5.5, 6.3, -4.5, 12.0 };
+            /*double[] array = { 1.0, 2.0, 3.3, 5.5, 6.3, -4.5, 12.0 };
             ArrayCalcs.Sum1(array);
             ArrayCalcs.Ave(array);
             ArrayCalcs.Maximi(array);
-            ArrayCalcs.Minimi(array);
+            ArrayCalcs.Minimi(array);*/
         }
     }
 }

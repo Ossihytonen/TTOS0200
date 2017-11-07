@@ -20,13 +20,5 @@ namespace Viikko44
                 Throws.Add(Value);
             }
         }
-
-        public void Print()
-        {
-            foreach (int i in Throws)
-            {
-                Console.WriteLine(i);
-            }
-        }
     }
 }
