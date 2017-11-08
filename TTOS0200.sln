@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikko44Tests1", "Viikko44Tests1\Viikko44Tests1.csproj", "{2AF98D6D-8F4E-4FAA-81B4-FD9C3563F871}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikko44.2Tests", "Viikko44.2Tests\Viikko44.2Tests.csproj", "{9B4596AB-2BB1-4599-AE18-8FF7672492F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemo", "WPFDemo\WPFDemo.csproj", "{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{9B4596AB-2BB1-4599-AE18-8FF7672492F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B4596AB-2BB1-4599-AE18-8FF7672492F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B4596AB-2BB1-4599-AE18-8FF7672492F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
