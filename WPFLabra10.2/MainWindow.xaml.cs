@@ -24,5 +24,20 @@ namespace WPFLabra10._2
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            double L, H, W, Ipa, Lpa, Kp;
+            L = double.Parse(ValueL.Text);
+            H = double.Parse(ValueH.Text);
+            W = double.Parse(ValueW.Text);
+            Lpa = ((H - 2 * W) * (L - 2 * W))/1000;
+            Kp = (H+H+L+L)/1000;
+            Ipa = (H * L)/1000;
+            txtLpa.Text = Lpa.ToString("0.00")+"m^2";
+            txtKp.Text = Kp.ToString("0.00")+"m^2";
+            txtIpa.Text = Ipa.ToString("0.00")+"m";
+
+        }
     }
 }
