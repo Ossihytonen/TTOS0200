@@ -24,5 +24,31 @@ namespace WPFLabra10._1
         {
             InitializeComponent();
         }
+        private void ValintaOstan_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                ListBoxItem li = (ListBoxItem)ValintaOstan.SelectedItem;
+                string testi = li.Content.ToString();
+                if (testi == "USD")
+                {
+                    double f, g;
+                    f = double.Parse(txtOstan.Text);
+                    g = (f * 0.8997);
+                    txtMyyn.Text = g.ToString("0.00");
+                }
+                else
+                {
+                    double f, g;
+                    f = double.Parse(txtOstan.Text);
+                    g = (f / 0.8997);
+                    txtMyyn.Text = g.ToString("0.00");
+                }
+            }
+            catch (Exception ex)
+            {
+                txtMyyn.Text = ex.Message;
+            }
+        }
     }
 }
