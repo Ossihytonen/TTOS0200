@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikko43", "Viikko43\Viikko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikko44", "Viikko44\Viikko44.csproj", "{15B7733F-1F45-4EA2-BE30-EF3A82186547}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemo", "WPFDemo\WPFDemo.csproj", "{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{15B7733F-1F45-4EA2-BE30-EF3A82186547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15B7733F-1F45-4EA2-BE30-EF3A82186547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15B7733F-1F45-4EA2-BE30-EF3A82186547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB32A0D-33EB-46BC-B5C8-E8F5270016E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
