@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -32,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFLabra10", "WPFLabra10\WPFLabra10.csproj", "{06F5C796-D286-4BD5-A000-9DFA305FFC5C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFLabra10.1", "WPFLabra10.1\WPFLabra10.1.csproj", "{81B9D18D-E94E-4676-B666-23FD7323AB30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFLabra10.2", "WPFLabra10.2\WPFLabra10.2.csproj", "{33F5E0C8-8BAF-42AC-876F-21EFD8E0CFEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{81B9D18D-E94E-4676-B666-23FD7323AB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81B9D18D-E94E-4676-B666-23FD7323AB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81B9D18D-E94E-4676-B666-23FD7323AB30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33F5E0C8-8BAF-42AC-876F-21EFD8E0CFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F5E0C8-8BAF-42AC-876F-21EFD8E0CFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F5E0C8-8BAF-42AC-876F-21EFD8E0CFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F5E0C8-8BAF-42AC-876F-21EFD8E0CFEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

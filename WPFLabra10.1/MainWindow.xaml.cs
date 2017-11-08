@@ -24,7 +24,8 @@ namespace WPFLabra10._1
         {
             InitializeComponent();
         }
-        private void ValintaOstan_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+
+        private void txtOstan_TextChanged(object sender, TextChangedEventArgs e)
         {
             try
             {

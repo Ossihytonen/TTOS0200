@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="txtOstan" HorizontalAlignment="Left" Height="23" Margin="144,156,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="txtOstan" HorizontalAlignment="Left" Height="23" Margin="144,156,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="99" TextChanged="txtOstan_TextChanged"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="72,135,0,0" TextWrapping="Wrap" Text="Ostan" VerticalAlignment="Top" Width="76"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="281,134,0,0" TextWrapping="Wrap" Text="Maksan" VerticalAlignment="Top"/>
-        <ComboBox x:Name="ValintaOstan" HorizontalAlignment="Left" Margin="73,156,0,0" VerticalAlignment="Top" Width="66" SelectionChanged="ValintaOstan_SelectionChanged_1">
+        <ComboBox x:Name="ValintaOstan" HorizontalAlignment="Left" Margin="73,156,0,0" VerticalAlignment="Top" Width="66">
             <ListBoxItem Content="USD"/>
             <ListBoxItem Content="EUR"/>
         </ComboBox>
