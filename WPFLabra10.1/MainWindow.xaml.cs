@@ -46,9 +46,9 @@ namespace WPFLabra10._1
                     txtMyyn.Text = g.ToString("0.00");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                txtMyyn.Text = ex.Message;
+                txtMyyn.Text = " ";
             }
         }
     }
