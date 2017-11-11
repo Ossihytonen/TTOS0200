@@ -51,5 +51,10 @@ namespace WPFLabra10._1
                 txtMyyn.Text = " ";
             }
         }
+
+        private void Grid_Initialized(object sender, EventArgs e)
+        {
+            txtOstan.Text = "1";
+        }
     }
 }

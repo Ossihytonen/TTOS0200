@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Border>
-        <Grid>
+        <Grid Initialized="Grid_Initialized">
             <TextBox x:Name="txtOstan" HorizontalAlignment="Left" Height="23" Margin="144,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99" TextChanged="txtOstan_TextChanged"/>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="72,135,0,0" TextWrapping="Wrap" Text="Ostan" VerticalAlignment="Top" Width="76"/>
             <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="281,134,0,0" TextWrapping="Wrap" Text="Maksan" VerticalAlignment="Top"/>
-            <ComboBox x:Name="ValintaOstan" HorizontalAlignment="Left" Margin="73,156,0,0" VerticalAlignment="Top" Width="66">
+            <ComboBox x:Name="ValintaOstan" HorizontalAlignment="Left" Margin="73,156,0,0" VerticalAlignment="Top" Width="66" SelectedIndex="0">
                 <ListBoxItem Content="USD"/>
                 <ListBoxItem Content="EUR"/>
             </ComboBox>
