@@ -5,11 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Labra11._3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="button" Content="Button" Height="51" Margin="0,0,438,0"/>
-            <Button x:Name="button1" Content="Button" Height="54" Margin="0,0,438,0"/>
-            <DataGrid x:Name="dgAutot" Margin="5"/>
+        Title="Numerokone" Height="367" Width="515">
+    <Grid Margin="0,0,2,2" Background="#FF8211F3">
+        <Button x:Name="btnDraw" Content="Draw" Margin="129,121,321,186" Click="btnDraw_Click"/>
+        <Button x:Name="btnClear" Content="Clear" Margin="311,121,144,186" RenderTransformOrigin="0.52,0.538" Click="btnClear_Click"/>
+        <ComboBox x:Name="listGames" HorizontalAlignment="Left" Margin="241,53,0,0" VerticalAlignment="Top" Width="120">
+        </ComboBox>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="129,84,0,0" TextWrapping="Wrap" Text="Number of draws" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
+        <TextBox x:Name="textDraws" HorizontalAlignment="Left" Height="23" Margin="241,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="129,53,0,0" TextWrapping="Wrap" Text="Choose a game" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="150" Margin="39,164,0,0" VerticalAlignment="Top" Width="431">
+            <TextBox x:Name="Results" TextWrapping="Wrap" Height="140" Width="408"/>
+        </ScrollViewer>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="154,10,0,0" TextWrapping="Wrap" Text="Numerokone" VerticalAlignment="Top" Height="38" Width="207" FontFamily="Britannic Bold" FontSize="36" Foreground="White"/>
 
     </Grid>
 </Window>
