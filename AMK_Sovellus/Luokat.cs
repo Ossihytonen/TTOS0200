@@ -18,20 +18,23 @@ namespace AMK_Sovellus
             //Tutkinnot = new List<Tutkinto>();
             Tutkinnot.Add(new Tutkinto(TutkinnonNimi));
         }
-        public static void HaeTutkinnot()
+        public override string ToString()
         {
+            string s = "";
             foreach (var tutkinto in Tutkinnot)
             {
-                Console.WriteLine(tutkinto.TutkinnonNimi);
+                //Console.WriteLine(tutkinto.TutkinnonNimi);
+                s += tutkinto.TutkinnonNimi + " ";
             }
-
+            return s;
         }
 
         static void Main(string[] args)
         {
             AMK jamk = new AMK("jamk");
-            jamk.Tutkinnot.Add = "";
-            AMK.HaeTutkinnot();
+            jamk.TutkinnonNimi = "Tieto";
+            jamk.Tutkinnot.Add("sd");// += jamk.TutkinnonNimi;
+            AMK.ToS();
             Tutkinto.HaeOpintojaksot();
 
         }
