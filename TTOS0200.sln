@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -42,6 +42,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra11.2", "Labra11.2\Labra11.2.csproj", "{DBCB6F8C-F961-4ED0-8987-F54107EADF29}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra11.3", "Labra11.3\Labra11.3.csproj", "{BD5DDE76-792D-4DBC-B03D-51AF74DDF27B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMK_Sovellus", "AMK_Sovellus\AMK_Sovellus.csproj", "{B63F4C9F-2FCA-409F-87CD-E475761D702D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{BD5DDE76-792D-4DBC-B03D-51AF74DDF27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD5DDE76-792D-4DBC-B03D-51AF74DDF27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD5DDE76-792D-4DBC-B03D-51AF74DDF27B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B63F4C9F-2FCA-409F-87CD-E475761D702D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63F4C9F-2FCA-409F-87CD-E475761D702D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63F4C9F-2FCA-409F-87CD-E475761D702D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63F4C9F-2FCA-409F-87CD-E475761D702D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

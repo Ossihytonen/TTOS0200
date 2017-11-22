@@ -71,6 +71,7 @@ namespace Labra11._3
             ArvotutNumerot.Clear();
             Lisanumerot = Enumerable.Range(1, 11).OrderBy(x => rng.Next()).Take(2).ToList();
             ArvotutNumerot = Enumerable.Range(1, 50 + 1).OrderBy(x => rng.Next()).Take(5).ToList();
+            //ArvotutNumerot.AddRange(Lisanumerot);
         }
         public override string ToString()
         {
